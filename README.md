@@ -8,5 +8,5 @@ Simple-PHP-Serverlist
     this will return the serverlist string
       
     SAVE A SERVER FOR 3 MINUTES:
-    www.example.com/index.php?s=1&r=[IP]&l=[LOCALIP]&n=[SERVERNAME]
+    www.example.com/index.php?s=1&r=1&l=[LOCALIP]&n=[SERVERNAME]
     this will save the server details for 3 minutes in the servers.txt file
