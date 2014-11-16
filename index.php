@@ -1,8 +1,5 @@
 <?php
 
-// LOAD SERVERLIST ->              www.example.com/index.php
-// SAVE A SERVER FOR 3 MINUTES ->  www.example.com/index.php?s=1&r=[IP]&l=[LOCAL_IP]&n=[SERVER_NAME]
-
 if (isset($_GET["s"])) { $server = $_GET["s"]; } else { $server = 0; }
 if (isset($_GET["l"])) { $ipLocal = $_GET["l"]; } else { $ipLocal = ""; }
 if (isset($_GET["n"])) { $serverName = $_GET["n"]; } else { $serverName = ""; }
@@ -97,8 +94,6 @@ else
 	$overwritefile = fopen("servers.txt", "w");
 	fwrite($overwritefile, $newList);
 	echo $newList;
-	
-	//echo "111.255.255.255;111.255.255.255;Server een;52#222.255.255.255;222.255.255.255;Server twee;51";
 }
 
 ?>
